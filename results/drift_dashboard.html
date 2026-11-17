@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Streaming Drift Dashboard (Synthetic Data)</title>
+<style>
+body { font-family: sans-serif; margin: 2em; color: #222; }
+h1 { font-size: 1.4em; }
+table { border-collapse: collapse; margin: 1em 0; }
+th, td { border: 1px solid #999; padding: 4px 10px; text-align: right; }
+th { background: #eee; }
+.flag { background: #ffd9d9; }
+.ok { background: #dff0d8; }
+.note { color: #555; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>Streaming Drift Dashboard</h1>
+<p class="note"><strong>Synthetic data only.</strong> Simulated event stream:
+7200 synthetic events over 120 minutes, 24 5-minute windows, seed 7.</p>
+<h2>Windows</h2>
+<table>
+<tr><th>Window</th><th>Start (min)</th><th>Events</th><th>Mean amount</th>
+<th>Frac purchase</th><th>Frac mobile</th><th>Amount PSI</th><th>KS p</th>
+<th>Channel PSI</th><th>Event-type PSI</th><th>Flagged</th><th>Confirmed</th></tr>
+<tr class="ok"><td>0</td><td>0</td><td>300</td><td>46.0496</td><td>0.3067</td><td>0.55</td><td>0.1526</td><td>0.144327</td><td>0.0098</td><td>0.003</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>1</td><td>5</td><td>300</td><td>49.5131</td><td>0.2867</td><td>0.5467</td><td>0.0608</td><td>0.964155</td><td>0.0085</td><td>0.004</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>2</td><td>10</td><td>300</td><td>48.5335</td><td>0.3333</td><td>0.5933</td><td>0.1771</td><td>0.593345</td><td>0.0348</td><td>0.0061</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>3</td><td>15</td><td>300</td><td>49.659</td><td>0.3033</td><td>0.5133</td><td>0.1254</td><td>0.944452</td><td>0.0007</td><td>0.0025</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>4</td><td>20</td><td>300</td><td>50.3335</td><td>0.2767</td><td>0.4633</td><td>0.1324</td><td>0.790269</td><td>0.0056</td><td>0.0063</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>5</td><td>25</td><td>300</td><td>50.6617</td><td>0.3167</td><td>0.5033</td><td>0.139</td><td>0.637106</td><td>0.0</td><td>0.0021</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>6</td><td>30</td><td>300</td><td>51.2941</td><td>0.25</td><td>0.53</td><td>0.1251</td><td>0.89446</td><td>0.0035</td><td>0.0148</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>7</td><td>35</td><td>300</td><td>50.459</td><td>0.3067</td><td>0.4867</td><td>0.0548</td><td>0.990987</td><td>0.0008</td><td>0.0021</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>8</td><td>40</td><td>300</td><td>51.2831</td><td>0.3233</td><td>0.4767</td><td>0.0738</td><td>0.684699</td><td>0.0023</td><td>0.0034</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>9</td><td>45</td><td>300</td><td>48.4188</td><td>0.2733</td><td>0.42</td><td>0.2038</td><td>0.502032</td><td>0.0262</td><td>0.0032</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>10</td><td>50</td><td>300</td><td>48.7942</td><td>0.2933</td><td>0.4367</td><td>0.1303</td><td>0.531398</td><td>0.0164</td><td>0.0094</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>11</td><td>55</td><td>300</td><td>53.9228</td><td>0.2967</td><td>0.4867</td><td>0.1453</td><td>0.040567</td><td>0.0008</td><td>0.0028</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>12</td><td>60</td><td>300</td><td>49.2525</td><td>0.27</td><td>0.4967</td><td>0.0756</td><td>0.822881</td><td>0.0001</td><td>0.006</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>13</td><td>65</td><td>300</td><td>51.1024</td><td>0.2767</td><td>0.4967</td><td>0.1265</td><td>0.466723</td><td>0.0001</td><td>0.0021</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>14</td><td>70</td><td>300</td><td>49.1761</td><td>0.3067</td><td>0.4967</td><td>0.0467</td><td>0.86062</td><td>0.0001</td><td>0.004</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>15</td><td>75</td><td>300</td><td>48.1912</td><td>0.2833</td><td>0.4733</td><td>0.1497</td><td>0.188317</td><td>0.003</td><td>0.0026</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>16</td><td>80</td><td>300</td><td>49.4061</td><td>0.2967</td><td>0.5233</td><td>0.1646</td><td>0.686091</td><td>0.0021</td><td>0.0065</td><td>no</td><td>no</td></tr>
+<tr class="ok"><td>17</td><td>85</td><td>300</td><td>48.6148</td><td>0.3467</td><td>0.4867</td><td>0.0349</td><td>0.695844</td><td>0.0008</td><td>0.0123</td><td>no</td><td>no</td></tr>
+<tr class="flag"><td>18</td><td>90</td><td>300</td><td>77.3161</td><td>0.4533</td><td>0.6667</td><td>1.4163</td><td>0.0</td><td>0.1148</td><td>0.1092</td><td>yes</td><td>no</td></tr>
+<tr class="flag"><td>19</td><td>95</td><td>300</td><td>77.8789</td><td>0.43</td><td>0.7033</td><td>1.423</td><td>0.0</td><td>0.1746</td><td>0.1139</td><td>yes</td><td>yes</td></tr>
+<tr class="flag"><td>20</td><td>100</td><td>300</td><td>77.4849</td><td>0.51</td><td>0.71</td><td>1.3962</td><td>0.0</td><td>0.1871</td><td>0.1925</td><td>yes</td><td>yes</td></tr>
+<tr class="flag"><td>21</td><td>105</td><td>300</td><td>76.4554</td><td>0.45</td><td>0.6833</td><td>1.532</td><td>0.0</td><td>0.1402</td><td>0.1171</td><td>yes</td><td>yes</td></tr>
+<tr class="flag"><td>22</td><td>110</td><td>300</td><td>75.9468</td><td>0.4533</td><td>0.66</td><td>1.7016</td><td>0.0</td><td>0.1054</td><td>0.1061</td><td>yes</td><td>yes</td></tr>
+<tr class="flag"><td>23</td><td>115</td><td>300</td><td>76.7166</td><td>0.4733</td><td>0.67</td><td>1.1679</td><td>0.0</td><td>0.1196</td><td>0.134</td><td>yes</td><td>yes</td></tr>
+</table>
+<h2>Detection summary</h2>
+<ul>
+<li>Drift injected at window 18 (minute 90).</li>
+<li>First flagged live window: 18.</li>
+<li>First confirmed alert: 19.</li>
+<li>Detection delay: 1 window(s) after onset.</li>
+<li>Confirmed alerts before onset (false alarms): 0.</li>
+</ul>
+<p class="note">Thresholds: PSI &gt; 0.25 or KS p &lt; 0.01
+flags a window; 2 consecutive flagged windows confirm an alert.
+Reference period: windows 0-11 (first 60 minutes).</p>
+</body>
+</html>
